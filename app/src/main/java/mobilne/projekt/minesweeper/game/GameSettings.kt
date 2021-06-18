@@ -4,6 +4,7 @@ import android.content.SharedPreferences
 import androidx.core.content.edit
 import mobilne.projekt.minesweeper.*
 
+
 data class GameSettings(
     val rows: Int,
     val columns: Int,
