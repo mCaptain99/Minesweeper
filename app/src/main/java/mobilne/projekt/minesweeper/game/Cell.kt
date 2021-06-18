@@ -2,6 +2,7 @@ package mobilne.projekt.minesweeper.game
 
 import mobilne.projekt.minesweeper.game.Board
 
+
 data class Cell(
     val row: Int,
     val column: Int,
