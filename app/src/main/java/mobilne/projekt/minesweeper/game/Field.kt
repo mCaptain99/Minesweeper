@@ -10,6 +10,7 @@ import kotlin.experimental.inv
 import kotlin.experimental.or
 import kotlin.math.ceil
 
+
 class Field private constructor(
     private val data: ByteArray, mines: Int, val rows: Int, val columns: Int
 ) : Parcelable, Serializable {
