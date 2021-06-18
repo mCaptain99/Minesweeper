@@ -4,6 +4,7 @@ import mobilne.projekt.minesweeper.game.generators.FieldGenerationArguments
 import mobilne.projekt.minesweeper.game.generators.FieldGenerator
 import mobilne.projekt.minesweeper.game.generators.RandomFieldGenerator
 
+
 enum class Preset(val rows: Int, val columns: Int, val mines: Int) {
     EASY(9, 9, 10),
     MEDIUM(16, 16, 40),
