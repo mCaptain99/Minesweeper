@@ -13,6 +13,7 @@ import kotlin.experimental.inv
 import kotlin.experimental.or
 import kotlin.math.ceil
 
+
 class Board private constructor(
     private val field: Field,
     private var data: ByteArray,
