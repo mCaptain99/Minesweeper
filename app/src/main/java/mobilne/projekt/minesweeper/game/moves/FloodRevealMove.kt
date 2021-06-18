@@ -6,6 +6,7 @@ import mobilne.projekt.minesweeper.game.Board
 import java.util.*
 import kotlin.collections.HashSet
 
+
 class FloodRevealMove(val row: Int, val column: Int) : Move {
     override fun execute(board: Board, changeSet: Board.ChangeSet) {
         if (board.isMine(row, column)) {
