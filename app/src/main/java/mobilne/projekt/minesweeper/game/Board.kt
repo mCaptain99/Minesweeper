@@ -118,9 +118,10 @@ class Board private constructor(
         boundsCheck(rows, columns, row, column)
         return field[row, column]
     }
-
+    
     fun getAdjacentMines(row: Int, column: Int) = field.getAdjacentMines(row, column)
 
+    //manage mines
     fun setRevealed(row: Int, column: Int, revealed: Boolean) {
         val whichField = field.columns * row + column
         val whichByte = whichField ushr 2
@@ -135,6 +136,7 @@ class Board private constructor(
         data[whichByte] = newValue
     }
 
+    //manage flags
     fun setFlagged(row: Int, column: Int, flagged: Boolean) {
         val whichField = field.columns * row + column
         val whichByte = whichField ushr 2
